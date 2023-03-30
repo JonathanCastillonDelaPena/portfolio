@@ -1,10 +1,8 @@
 import React from "react";
-import NavBar from "../components/NavBar";
 
 const NotFoundPage = () => {
   return (
-    <div>
-      <NavBar />
+    <div style={{marginTop: 300}}>
       <h1>NotFoundPage</h1>
     </div>
   );

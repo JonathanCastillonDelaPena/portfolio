@@ -2,7 +2,7 @@ import { Box } from "@mui/system";
 import Typography from "@mui/material/Typography";
 import React from "react";
 import landingImage from "../assets/landingPage.jpg";
-import NavBar from "../components/NavBar";
+import Grid from "@mui/material/Grid";
 
 const landingImageStyle = {
   // height: 300,
@@ -24,20 +24,31 @@ const sloganStyle = {
 
 const HomePage = () => {
   return (
-    <Box sx={landingImageStyle}>
-      <NavBar />
-      <Typography variant="h1" sx={sloganStyle}>
-        Let's Become The "
-        <Typography variant="h1" component="span" color="blue" sx={sloganStyle}>
-          We
+    <Grid item xs={12}>
+      <Box sx={landingImageStyle}>
+        <Typography variant="h1" sx={sloganStyle}>
+          Let's Become The "
+          <Typography
+            variant="h1"
+            component="span"
+            color="blue"
+            sx={sloganStyle}
+          >
+            We
+          </Typography>
+          " In Your{" "}
+          <Typography
+            variant="h1"
+            component="span"
+            color="blue"
+            sx={sloganStyle}
+          >
+            We
+          </Typography>
+          bsite
         </Typography>
-        " In Your{" "}
-        <Typography variant="h1" component="span" color="blue" sx={sloganStyle}>
-          We
-        </Typography>
-        bsite
-      </Typography>
-    </Box>
+      </Box>
+    </Grid>
   );
 };
 

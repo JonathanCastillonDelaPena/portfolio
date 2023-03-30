@@ -1,12 +1,11 @@
 import React from "react";
-import NavBar from "../components/NavBar";
+import Grid from "@mui/material/Grid";
 
 const ProjectsPage = () => {
   return (
-    <div>
-      <NavBar/>
+    <Grid item xs={12} bgcolor={"blue"}>
       <h2>ProjectsPage</h2>
-    </div>
+    </Grid>
   );
 };
 
