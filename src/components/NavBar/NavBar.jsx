@@ -37,7 +37,7 @@ const NavBar = () => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
           <Tooltip title="Go to Home Page" placement="bottom" arrow>
             <Typography
               variant="h6"
@@ -97,7 +97,7 @@ const NavBar = () => {
           </Box>
 
           <Box sx={{ display: { xs: "flex", md: "none" }, flexGrow: 1 }}>
-            <AdbIcon sx={{ mr: 1 }} />
+            {/* <AdbIcon sx={{ mr: 1 }} /> */}
             <Tooltip title="Go to Home Page" placement="bottom" arrow>
               <Typography
                 variant="h5"
