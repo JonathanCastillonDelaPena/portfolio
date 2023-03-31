@@ -16,7 +16,7 @@ const UnderConstruction = () => {
         <CardMedia
           component="img"
           alt="Under Construction"
-          image="src/assets/underConstruction.svg"
+          image="/src/assets/underConstruction.svg"
         />
       </Card>
     </Zoom>
