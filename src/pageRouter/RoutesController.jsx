@@ -9,7 +9,7 @@ const RoutesController = () => {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="*" element={<NotFoundPage />} />
+      <Route path="/*" element={<NotFoundPage />} />
       <Route path="/home" element={<HomePage />} />
       <Route path="/projects" element={<ProjectsPage />} />
       <Route path="/about-me" element={<AboutMePage />} />
