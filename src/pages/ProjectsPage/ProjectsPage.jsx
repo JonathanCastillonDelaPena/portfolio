@@ -2,6 +2,7 @@ import React from "react";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import UnderConstruction from "../../components/UnderConstruction/UnderConstruction";
+import ProjectsCarousel from "../../components/ProjectsCarousel/ProjectsCarousel";
 
 const boxStyle = {
   display: "flex",
@@ -14,7 +15,7 @@ const ProjectsPage = () => {
   return (
     <Grid item xs={12}>
       <Box sx={boxStyle}>
-        <UnderConstruction />
+        <ProjectsCarousel />
       </Box>
     </Grid>
   );
