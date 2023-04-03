@@ -1,10 +1,8 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
-import UnderConstruction from "../../components/UnderConstruction/UnderConstruction";
 import ProjectsCarousel from "../../components/ProjectsCarousel/ProjectsCarousel";
 
-const boxStyle = {
+const style = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
@@ -13,10 +11,8 @@ const boxStyle = {
 
 const ProjectsPage = () => {
   return (
-    <Grid item xs={12}>
-      <Box sx={boxStyle}>
+    <Grid item xs={12} sx={style}>
         <ProjectsCarousel />
-      </Box>
     </Grid>
   );
 };
