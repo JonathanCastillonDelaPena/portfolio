@@ -53,25 +53,25 @@ const ProjectDetailsModal = (props) => {
           <Typography variant="h6" sx={{ mt: 2 }}>
             Technologies Used
           </Typography>
-          <Stack direction="row" spacing={2}>
+          <Box sx={{display: "flex", flexWrap: "wrap", gap: 1}}>
             {props.item.techStack.map((tech) => (
               <Tooltip key={tech.name} title={tech.name} placement="bottom" arrow>
-                <Avatar alt={tech.name} src={tech.image} />
+                <Avatar alt={tech.name} src={tech.image} sx={{marginX: 1}} />
               </Tooltip>
             ))}
-          </Stack>
+          </Box>
           <Typography variant="h6" sx={{ mt: 2 }}>
-            Members
+            Team Members
           </Typography>
-          <Stack direction="row" spacing={2}>
+          <Box sx={{display: "flex", flexWrap: "wrap", gap: 1}}>
             {props.item.team.map((member) => (
               <Tooltip key={member.name} title={member.name} placement="bottom" arrow>
                 <a href={member.link} target="_blank">
-                  <Avatar alt={member.name} src={member.image} />
+                  <Avatar alt={member.name} src={member.image} sx={{marginX: 1}} />
                 </a>
               </Tooltip>
             ))}
-          </Stack>
+          </Box>
         </Box>
       </Fade>
     </Modal>

@@ -1,21 +1,37 @@
 const technologies = {
-  html: { name: "HTML 5", image: "/html.png" },
-  bootstrap: { name: "Bootstrap 5", image: "/bootstrap.png" },
-  css: { name: "CSS", image: "/css.png" },
-  js: { name: "Javascript", image: "/js.png" },
-  mysql: { name: "MySQL", image: "/mysql.png" },
+  html: { name: "HTML 5", image: "/assets/technologies/html.png" },
+  bootstrap: { name: "Bootstrap 5", image: "/assets/technologies/bootstrap.png" },
+  css: { name: "CSS", image: "/assets/technologies/css.png" },
+  js: { name: "Javascript", image: "/assets/technologies/js.png" },
+  mysql: { name: "MySQL", image: "/assets/technologies/mysql.png" },
+  react: { name: "React JS", image: "/assets/technologies/react.png" },
+  node: { name: "Node JS", image: "/assets/technologies/nodejs.png" },
+  express: { name: "Express", image: "/assets/technologies/express.png" },
+  namecheap: { name: "Namecheap", image: "/assets/technologies/namecheap.png" },
+  cloudinary: { name: "Cloudinary", image: "/assets/technologies/cloudinary.png" },
+  sendinblue: { name: "Sendinblue", image: "/assets/technologies/sendinblue.png" },
 };
 
 const members = {
   jonathan: {
     name: "Jonathan C. Dela Peña",
-    image: "/jonathan.jpg",
+    image: "/assets/avatar/jonathan.jpg",
     link: "https://jonathandelapena.vercel.app/",
   },
   tristan: {
     name: "Tristan Keith Anthony A. Viernes",
-    image: "/tristan.png",
+    image: "/assets/avatar/tristan.png",
     link: "https://www.tristanviernes.com/",
+  },
+  jestoni: {
+    name: "Jestoni Ceroma",
+    image: "",
+    link: "",
+  },
+  mark: {
+    name: "Mark Joseph Infiesto",
+    image: "",
+    link: "",
   },
 };
 
@@ -23,10 +39,10 @@ const projects = [
   {
     title: "KodeGo Bootcamp",
     subtitle: "Mini Project 1",
-    image: "/miniProject1Mockup.png",
+    image: "/assets/projects/miniProject1Mockup.png",
     link: "https://jonathancastillondelapena.github.io/mini1/",
     description:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, dolorem porro officia ipsum nisi totam tempora harum voluptates cupiditate, repellat aut enim labore aperiam? Reiciendis, perspiciatis quis. Veritatis, consectetur debitis.",
+      "A website showcasing the pastries of my friend Mark.",
     techStack: [
       technologies.html,
       technologies.bootstrap,
@@ -38,18 +54,24 @@ const projects = [
   {
     title: "KodeGo Bootcamp",
     subtitle: "Capstone",
-    image: "/capstoneMockup.png",
+    image: "/assets/projects/capstoneMockup.png",
     link: "https://kodebook.tristanviernes.com/",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eveniet iure ex optio tempora blanditiis deleniti eligendi doloremque fugit? Nulla repudiandae officiis asperiores veniam quidem dignissimos praesentium ad, adipisci vero.",
+      "A social media website where you can connect with like minded people.",
     techStack: [
       technologies.html,
       technologies.bootstrap,
       technologies.css,
       technologies.js,
       technologies.mysql,
+      technologies.react,
+      technologies.node,
+      technologies.express,
+      technologies.namecheap,
+      technologies.cloudinary,
+      technologies.sendinblue,
     ],
-    team: [members.jonathan, members.tristan],
+    team: [members.jonathan, members.tristan, members.jestoni, members.mark],
   },
 ];
 
