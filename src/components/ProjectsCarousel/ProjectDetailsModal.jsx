@@ -2,6 +2,7 @@ import React from "react";
 import Avatar from "@mui/material/Avatar";
 import Backdrop from "@mui/material/Backdrop";
 import Box from "@mui/material/Box";
+import Fab from "@mui/material/Fab";
 import Fade from "@mui/material/Fade";
 import Modal from "@mui/material/Modal";
 import Typography from "@mui/material/Typography";
@@ -13,8 +14,8 @@ const boxStyle = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: { md: "50%" },
-  height: { md: "70%" },
+  width: { xs: "70%", sm: "60%", md: "40%", lg: "35%" },
+  maxHeight: { xs: "95vh" },
   bgcolor: "background.paper",
   border: "2px solid #000",
   borderRadius: 3,
@@ -22,6 +23,7 @@ const boxStyle = {
   p: 1,
   display: "flex",
   flexDirection: "column",
+  overflowY: "auto",
 };
 
 const ProjectDetailsModal = (props) => {
@@ -53,22 +55,39 @@ const ProjectDetailsModal = (props) => {
           <Typography variant="h6" sx={{ mt: 2 }}>
             Technologies Used
           </Typography>
-          <Box sx={{display: "flex", flexWrap: "wrap", gap: 1}}>
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
             {props.item.techStack.map((tech) => (
-              <Tooltip key={tech.name} title={tech.name} placement="bottom" arrow>
-                <Avatar alt={tech.name} src={tech.image} sx={{marginX: 1}} />
+              <Tooltip
+                key={tech.name}
+                title={tech.name}
+                placement="bottom"
+                arrow
+              >
+                <Avatar alt={tech.name} src={tech.image} sx={{ marginX: 1 }} />
               </Tooltip>
             ))}
           </Box>
           <Typography variant="h6" sx={{ mt: 2 }}>
             Team Members
           </Typography>
-          <Box sx={{display: "flex", flexWrap: "wrap", gap: 1}}>
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
             {props.item.team.map((member) => (
-              <Tooltip key={member.name} title={member.name} placement="bottom" arrow>
-                <a href={member.link} target="_blank">
-                  <Avatar alt={member.name} src={member.image} sx={{marginX: 1}} />
-                </a>
+              <Tooltip
+                key={member.name}
+                title={member.name}
+                placement="bottom"
+                arrow
+              >
+                <Fab
+                  size="medium"
+                  onClick={() => window.open(member.link, "_blank")}
+                  sx={{ margin: 1 }}
+                >
+                  <Avatar
+                    alt={member.name}
+                    src={member.image}
+                  />
+                </Fab>
               </Tooltip>
             ))}
           </Box>

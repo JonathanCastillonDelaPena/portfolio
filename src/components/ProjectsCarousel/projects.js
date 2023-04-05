@@ -25,7 +25,7 @@ const members = {
   },
   jestoni: {
     name: "Jestoni Ceroma",
-    image: "",
+    image: "/assets/avatar/jestoni.jpg",
     link: "",
   },
   mark: {
