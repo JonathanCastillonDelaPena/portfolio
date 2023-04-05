@@ -1,6 +1,5 @@
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
-import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import { BrowserRouter } from "react-router-dom";
 import RoutesController from "./pageRouter/RoutesController";
@@ -18,10 +17,10 @@ function App() {
   return (
     <Box sx={{ height: "100vh", overflowY: "auto" }}>
       <BrowserRouter>
-        <NavBar />
-        <Grid container>
+        <Box sx={{ display: "flex", flexDirection: "column", minHeight: "100%" }} >
+          <NavBar />
           <RoutesController />
-        </Grid>
+        </Box>
       </BrowserRouter>
     </Box>
   );

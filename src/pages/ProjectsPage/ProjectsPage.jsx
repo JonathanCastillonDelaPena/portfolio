@@ -1,19 +1,25 @@
 import React from "react";
-import Grid from "@mui/material/Grid";
 import ProjectsCarousel from "../../components/ProjectsCarousel/ProjectsCarousel";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
 
-const style = {
+const boxStyle = {
   display: "flex",
-  justifyContent: "center",
+  flexDirection: "column",
   alignItems: "center",
-  // minHeight: "90vh",
+  justifyContent: "center",
+  flexGrow: 1,
 };
 
 const ProjectsPage = () => {
   return (
-    <Grid item xs={12} sx={style}>
-        <ProjectsCarousel />
-    </Grid>
+    <Box sx={boxStyle}>
+      <Grid container justifyContent={"center"}>
+        <Grid item xs={11} md={9}>
+          <ProjectsCarousel />
+        </Grid>
+      </Grid>
+    </Box>
   );
 };
 
