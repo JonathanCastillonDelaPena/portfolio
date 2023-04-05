@@ -1,30 +1,28 @@
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
-import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import { BrowserRouter } from "react-router-dom";
 import RoutesController from "./pageRouter/RoutesController";
-import backgroundImage from "./assets/rectLight.svg";
+import backgroundImage from "/assets/rectLight.svg";
 
 const landingImageStyle = {
   minWidth: "100%",
-  minHeight: "100%",
+  height: "100vh",
   backgroundImage: `url(${backgroundImage})`,
   backgroundSize: "cover",
   backgroundPosition: "center",
-  position: "fixed",
 };
 
 function App() {
   return (
-    <BrowserRouter>
-      <Box sx={landingImageStyle}>
-        <Grid container>
+    <Box sx={{ height: "100vh", overflowY: "auto" }}>
+      <BrowserRouter>
+        <Box sx={{ display: "flex", flexDirection: "column", minHeight: "100%" }} >
           <NavBar />
           <RoutesController />
-        </Grid>
-      </Box>
-    </BrowserRouter>
+        </Box>
+      </BrowserRouter>
+    </Box>
   );
 }
 

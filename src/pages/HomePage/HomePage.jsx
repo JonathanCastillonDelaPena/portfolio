@@ -4,6 +4,7 @@ import Slogan from "../../components/Slogan/Slogan";
 
 const gridContainerStyle = {
   display: { xs: "flex-column", lg: "flex" },
+  textAlign: { xs: "center", md: "left" },
 };
 
 const HomePage = () => {

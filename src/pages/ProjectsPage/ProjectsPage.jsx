@@ -1,22 +1,30 @@
 import React from "react";
-import Grid from "@mui/material/Grid";
+import ProjectsCarousel from "../../components/ProjectsCarousel/ProjectsCarousel";
 import Box from "@mui/material/Box";
-import UnderConstruction from "../../components/UnderConstruction/UnderConstruction";
+import Grid from "@mui/material/Grid";
 
 const boxStyle = {
   display: "flex",
-  justifyContent: "center",
+  flexDirection: "column",
   alignItems: "center",
-  minHeight: "90vh",
+  justifyContent: "center",
+  flexGrow: 1,
+  p: 1,
 };
+
+import projects from "../../components/ProjectsCarousel/projects";
+import CarouselItem from "../../components/ProjectsCarousel/CarouselItem";
 
 const ProjectsPage = () => {
   return (
-    <Grid item xs={12}>
-      <Box sx={boxStyle}>
-        <UnderConstruction />
-      </Box>
-    </Grid>
+    <Box sx={boxStyle}>
+      <Grid container justifyContent={"center"}>
+        <Grid item xs={11} md={9}>
+          <ProjectsCarousel />
+          {/* <CarouselItem item={projects[1]}/>  */}
+        </Grid>
+      </Grid>
+    </Box>
   );
 };
 

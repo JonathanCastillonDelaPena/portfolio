@@ -5,8 +5,8 @@ import Zoom from "@mui/material/Zoom";
 
 const paperStyle = {
   backgroundColor: "transparent",
-  width: { xs: 480 },
-  height: { xs: 450 },
+  width: { xs: 300, sm: 480 },
+  height: { xs: 270, sm: 450 },
 };
 
 const UnderConstruction = () => {
@@ -16,7 +16,7 @@ const UnderConstruction = () => {
         <CardMedia
           component="img"
           alt="Under Construction"
-          image={"/underConstruction.svg"}
+          image={"/assets/underConstruction.svg"}
         />
       </Card>
     </Zoom>
