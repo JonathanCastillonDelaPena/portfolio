@@ -11,11 +11,13 @@ import Typography from "@mui/material/Typography";
 import OpenInNewRoundedIcon from "@mui/icons-material/OpenInNewRounded";
 
 import ProjectDetailsModal from "./ProjectDetailsModal";
+import { Box } from "@mui/material";
 
 const cardStyle = {
   padding: 1,
   borderRadius: 4,
-  height: { xs: 250, sm: 390, md: 500 },
+  height: { xs: 250, sm: 390, md: 480 },
+  // height: "100%",
   display: "flex",
   flexDirection: "column",
 };
@@ -49,20 +51,18 @@ const CarouselItem = (props) => {
           </Grid>
         </Grid>
       </CardContent>
-      <Tooltip
-        title={"Click for details"}
-        followCursor
-        sx={{ width: "85%", alignSelf: "center"}}
-      >
+      <Tooltip title={"Click for details"} followCursor sx={{ flexGrow: 1 }}>
         <CardActionArea onClick={handleOpen}>
           <CardMedia
-            component="img"
             alt="Project Preview"
             image={props.item.image}
-            sx={{
-              borderRadius: 2,
-            }}
+            sx={{ height: "100%", borderRadius: 2 }}
           />
+          {/* <img
+            src={props.item.image}
+            alt="Project Preview"
+            style={{ height: "100%", borderRadius: 2 }}
+          /> */}
         </CardActionArea>
       </Tooltip>
       <ProjectDetailsModal

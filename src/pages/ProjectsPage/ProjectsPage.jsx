@@ -9,7 +9,11 @@ const boxStyle = {
   alignItems: "center",
   justifyContent: "center",
   flexGrow: 1,
+  p: 1,
 };
+
+import projects from "../../components/ProjectsCarousel/projects";
+import CarouselItem from "../../components/ProjectsCarousel/CarouselItem";
 
 const ProjectsPage = () => {
   return (
@@ -17,6 +21,7 @@ const ProjectsPage = () => {
       <Grid container justifyContent={"center"}>
         <Grid item xs={11} md={9}>
           <ProjectsCarousel />
+          {/* <CarouselItem item={projects[1]}/>  */}
         </Grid>
       </Grid>
     </Box>
