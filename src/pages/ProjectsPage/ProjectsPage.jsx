@@ -6,7 +6,7 @@ const style = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  minHeight: "90vh",
+  // minHeight: "90vh",
 };
 
 const ProjectsPage = () => {
