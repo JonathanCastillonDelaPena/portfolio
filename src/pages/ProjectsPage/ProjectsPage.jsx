@@ -12,16 +12,12 @@ const boxStyle = {
   p: 1,
 };
 
-import projects from "../../components/ProjectsCarousel/projects";
-import CarouselItem from "../../components/ProjectsCarousel/CarouselItem";
-
 const ProjectsPage = () => {
   return (
     <Box sx={boxStyle}>
       <Grid container justifyContent={"center"}>
         <Grid item xs={11} md={9}>
           <ProjectsCarousel />
-          {/* <CarouselItem item={projects[1]}/>  */}
         </Grid>
       </Grid>
     </Box>
