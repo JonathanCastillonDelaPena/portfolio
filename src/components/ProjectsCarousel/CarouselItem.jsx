@@ -43,7 +43,7 @@ const CarouselItem = (props) => {
             <Tooltip title={"Live Demo"} placement="left" arrow>
               <Fab
                 size="small"
-                onClick={() => window.open(props.item.link, "_blank")}
+                onClick={() => window.open(props.item.link, "_blank", "noopener")}
               >
                 <OpenInNewRoundedIcon />
               </Fab>
