@@ -26,7 +26,7 @@ const members = {
   jestoni: {
     name: "Jestoni Ceroma",
     image: "/assets/avatar/jestoni.jpg",
-    link: "",
+    link: "https://jestoni.devph.space/",
   },
   mark: {
     name: "Mark Joseph Infiesto",
